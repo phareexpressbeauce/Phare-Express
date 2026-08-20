@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phare Express | Liens Officiels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --card-hover: #21262d;
+            --accent-color: #00d2ff;
+            --text-color: #f0f6fc;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        /* Cadre de la bannière (-10%) */
+        .banner-container {
+            width: 100vw;
+            min-height: 225px;
+            max-height: 54vh;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            margin-bottom: -115px; /* Ajusté pour le logo plus grand */
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            max-height: 54vh;
+            object-fit: contain;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .profile-section {
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Logo / Avatar (+20%) */
+        .avatar {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 4px solid var(--bg-color);
+            background-color: var(--card-bg);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+        /* Liste de liens */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link-card:hover {
+            background-color: var(--card-hover);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.15);
+        }
+
+        /* Bouton mis en avant */
+        .link-card.primary {
+            background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+            border: none;
+            color: #ffffff;
+        }
+
+        .link-card.primary:hover {
+            opacity: 0.95;
+            box-shadow: 0 6px 20px rgba(67, 100, 247, 0.4);
+        }
+
+        /* Pied de page */
+        footer {
+            margin-top: 32px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cadre de bannière réactif -->
+    <div class="banner-container">
+        <img src="Banniere.png" alt="Bannière Phare Express">
+    </div>
+
+    <div class="container">
+        <!-- Profil / Logo -->
+        <div class="profile-section">
+            <img src="Logo.png" alt="Logo Phare Express" class="avatar">
+            <h1>Phare Express</h1>
+            <p class="subtitle">Restauration & Polissage de Phares | Saint-Georges & Beauce</p>
+        </div>
+
+        <!-- Liens -->
+        <div class="links-container">
+            <a href="tel:581-372-7241" class="link-card primary">
+                📞 Appeler / 581-372-7241 / 418-313-9344
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61593208135397&locale=fr_CA" target="_blank" class="link-card">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/phare.express.beauce/" target="_blank" class="link-card">
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@phareexpress?_r=1&_t=ZS-992rUBvNGI1" target="_blank" class="link-card">
+                Tiktok
+            </a>
+        </div>
+
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+</body>
+</html>
